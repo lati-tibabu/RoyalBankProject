@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/panelStyle.css">
+    <title>Create New Customer</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/Roy-Logo.png" alt="logo" class="royalLogo">
+        </div>
+    </header>
+    <div class="mainPage">
+        <div class="mainPane">
+            <h1 id="loginas">Banker Panel</h1>
+            <div>
+                <div id="backtoPanel">
+                    <a href="bankerPanelInfo.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z" />
+                        </svg>
+                        <label for="">Back to Panel</label>
+                    </a>
+                </div>
+                <div class="workPane">
+                    <div style="opacity: 0.5;">
+                        <li class="panelOption">
+                            <ul><a href="#">Information</a></ul>
+                            <ul><a href="#">Deposit</a> </ul>
+                            <ul><a href="#">Withdraw</a> </ul>
+                            <ul><a href="#">Transfer</a> </ul>
+                            <ul><a href="#">Transaction History</a> </ul>
+                        </li>
+
+                    </div>
+                    <div class="workArea">
+                        <div>
+                            <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Create Banker</h2>
+                            <div class="workAreaInfo">
+                                <form action="createCustomer" method="post">
+                                    <div class="infoLabel">
+                                        <label for="">First Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerFname" placeholder="customer first name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Second Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerSName" placeholder="customer second name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Last Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerLname" placeholder="customer last name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">account Number</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerAccno" placeholder="customer account number"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Gender</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerGender" placeholder="customer gender"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Address</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerAddress" placeholder="customer address"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Birth Date</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="date" name="customerBirthDate"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+
+                                    <div class="infoLabel">
+                                        <label for="">Nationality</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerNationality" placeholder="customer nationality"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Phone Number</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="customerPhone" placeholder="customer phone"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+
+                                    <div class="createUser">
+                                        <button type="submit"
+                                            style="display: flex; justify-content: baseline; border-radius: 4px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                            </svg>
+                                            Create</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="aboutPart">
+        <p id="aboutRoyal">
+            "Royal Bank is a leading online financial services platform that provides a secure and convenient way to
+            manage your money. Our mission is to help people achieve financial security and independence by providing
+            them with easy access to personal banking services. With Royal Bank, you can save money, make payments, and
+            access a variety of other services with ease. We strive to offer the most competitive interest rates and the
+            highest level of customer service. Our goal is to make your banking experience as stress-free and enjoyable
+            as possible."
+        </p>
+    </div>
+    <footer>
+        <div>
+            <p>Royal Bank 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
