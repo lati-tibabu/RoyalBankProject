@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+body{
+    background: rgba(222, 0, 22, 0.783);
+    background-image: url("/images/pexels-johannes-plenio-1103970.jpg");
+    background-size: cover;
+    background-blend-mode:darken;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mainPage{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+header{
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+}
+header:hover{
+    box-shadow: -10px -10px 50px 10px #fdf4005e;
+    transition: 0.4s;
+}
+footer{
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: montserrat;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+div .royalLogo{
+    width: 60px;
+}
+div.mainPane{
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 50px;
+    max-width: 1700px;
+}
+#loginas{
+    text-align: center;
+    padding-bottom: 30px;
+}
+/* #selectChioce{
+    text-align: center;
+    font-family: montserrat;
+} */
+/* div.choose{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+} */
+/* div.loginOption{
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif
+} */
+/* div.loginOption:hover{
+    cursor: pointer;
+    box-shadow: -10px -10px 50px 10px #ffffff;
+    transition: .3s
+} */
+/* div#adminOption{
+    border: 2px solid black;
+    background: rgb(255, 200, 0);
+    border-radius: 8px;
+    margin: 10px;
+} */
+/* div#bankerOption{
+    border: 2px solid black;
+    background: rgb(255, 200, 0);
+    border-radius: 8px;
+    margin: 10px;
+} */
+.aboutPart{
+    display: flex;
+    justify-content: center;
+}
+#aboutRoyal{
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 450px;
+    color: #ffffff;
+    font-style: italic;
+}
+/* .choose a{
+    text-decoration: none;
+    color: black;
+} */
+/* .usernamePass{
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 20px 3px #00234076;
+} */
+/* .usernamePass label{
+    font-family: montserrat;
+} */
+/* input.login{
+    font-family: montserrat;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 170px;
+    border: none;
+    padding: 3px;
+    border-bottom: 1px solid black;
+} */
+/* button.userLogin{
+    padding: 8px;
+    margin: 10px;
+    font-family: montserrat;
+    background: rgb(255, 200, 0);
+    border-radius: 8px;
+    font-weight: 700;
+} */
+
+/* button.userLogin:hover{
+    cursor: pointer;
+    background: rgb(255, 219, 88);
+} */
+.panelOption{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+li.panelOption{
+    padding: 15px;
+    background: rgba(255, 0, 0, 0.491);
+}
+.panelOption ul a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
+    margin: 3px;
+}
+.panelOption ul a:hover{
+    border-bottom: 3px solid black;
+}
+
+.workAreaInfo div{
+    padding: 3px;
+    font-family: montserrat;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+div.workPane{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.728);
+    border-radius: 17px;
+    max-width: 700px;
+    box-shadow: 3px 3px 30px 3px #00417669;
+}
+label.cusInfoArea{
+    margin: 100px;
+    /* margin-top: 30px; */
+    padding: 5px;
+}
+div .infoArea{
+    width: 400px;
+    margin-left: 90px;
+    border-bottom: 2px solid rgb(191, 191, 191);
+}
+div .infoArea:hover{
+    background: rgba(0, 117, 143, 0.148);
+    border-bottom: 2px solid rgba(0, 125, 188, 0.84);
+    transition: 0.3s;
+}
+div.infoArea input:focus{
+    outline: none;
+}
+div .infoLabel{
+    font-weight: bold;
+}
+/*Work on Search bar for banker panel*/
+form#cusSearchBar{
+    margin: 5px;
+    display: flex;
+    padding: 5px;
+}
+
+button#cusSearch{
+    background: rgba(248, 75, 75, 0.753);
+    color: white;
+    border: none;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    font-family: montserrat;
+    font-weight: bold;
+}
+button#cusSearch:hover{
+    cursor: pointer;
+}
+button#cusSearch label:hover{
+    cursor: pointer;
+}
+input#accBar{
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 3px;
+}
+div.executeBtn{
+    text-align: center;
+    padding: 7px;
+    margin-top: 15px;
+}
+div.executeBtn button:hover{
+    cursor: pointer;
+}
+div.executeBtn button{
+    font-family: montserrat;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(0, 162, 255);
+    color: white;
+}
+.transactionHistory p{
+    font-family: 'Courier New', Courier, monospace;
+}
+.transactionHistory{
+    overflow: scroll;
+}
+/*button for creating user*/
+
+div.createUser{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 9px;
+}
+.createUser button{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: rgb(252, 86, 86);
+}
+.createUser button:hover{
+    background: rgb(255, 110, 110);
+    cursor: pointer; 
+}
+/*Bankers Information table style*/
+/* #bankersInfoTable{
+    font-family: montserrat;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    /* border-collapse: collapse; */
+    /* width: 100%;
+    background: rgba(255, 89, 89, 0.658);
+}  */
+/* #bankersInfoTable tr{
+    border: 1px solid #ddd;
+}
+#bankersInfoTable th{
+    text-align: left;
+    /* border: 1px solid #ddd; */
+/* }
+tr#tableHeader{
+    background-color: white;
+    font-weight: lighter;
+} */ 
+/* .bankerInfoTable td, .bankerInfoTable th{
+    border: 1px solid #ddd;  */
+    /* padding: 8px; */
+    /* background: rgb(255, 89, 161); */
+    /* border-bottom: 1px solid black; */
+/* } */
+
+#bankersInfo {
+    font-family: montserrat;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #bankersInfo td, #bankersInfo th {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+  }
+  
+  #bankersInfo tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #bankersInfo tr:hover {background-color: #ddd;
+  cursor: pointer;}
+  
+  #bankersInfo th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff3257c9;
+    color: white;
+  }
+@media only screen and (max-device-width: 800px) {
+
+}

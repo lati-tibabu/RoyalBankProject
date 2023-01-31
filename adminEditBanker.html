@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/paneStyleAdmin.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="/images/Roy-Logo.png" alt="logo" class="royalLogo">
+        </div>
+    </header>
+    <div class="mainPage">
+        <div class="mainPane">
+            <h1 id="loginas">Admin Panel</h1>
+            <div>
+                <div>
+                    <form action="search" method="get" id="cusSearchBar">
+                        <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
+                        <button type="submit" id="cusSearch">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                            <label for="">Search</label>
+                        </button>
+                    </form>
+
+                </div>
+                <div class="workPane">
+                    <div>
+                        <li class="panelOption">
+                            <ul><a href="adminCreateBanker.html">Create Banker</a></ul>
+                            <ul><a href="adminBankerInfo.html">Bankers Info</a> </ul>
+                            <ul><a href="adminEditBanker.html" style="border-bottom: 3px solid rgb(255, 255, 255);">Edit
+                                    Banker</a> </ul>
+                            <ul><a href="adminCustomerInfo.html">Customers Info</a> </ul>
+                            <ul><a href="adminEditCustomer.html">Edit Customer</a> </ul>
+                            <ul><a href="adminCreateAdmin.html">Create Admin</a> </ul>
+                            <ul><a href="adminEditAdmin.html">Edit Admin</a> </ul>
+                        </li>
+                    </div>
+                    <div class="workArea">
+                        <div>
+                            <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Edit Banker</h2>
+                            <div class="workAreaInfo">
+                                <form action="search" method="get" id="cusSearchBar">
+                                    <input type="text" name="cus_accno" id="accBar" placeholder="Banker User Name">
+                                    <button type="submit" id="cusSearch">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                        </svg>
+                                        <label for="">Search</label>
+                                    </button>
+                                </form>
+                                <form action="editbanker" method="get">
+                                    <div class="infoLabel">
+                                        <label for="">First Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="bankerFname" placeholder="enter first name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Second Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="bankerSname" placeholder="enter second name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Last Name</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="bankerLname" placeholder="enter last name"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Email Address</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="email" name="bankerEmail" placeholder="enter email address"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Phone Number</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="text" name="bankerPhone" placeholder="enter phone number"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Password</label>
+                                    </div>
+                                    <div class="infoArea" style="text-align: center;">
+                                        <input type="password" name="bankerPass" placeholder="create password"
+                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                    </div>
+                                    <div class="createUser">
+                                        <button type="submit"
+                                            style="display: flex; justify-content: baseline; border-radius: 4px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                            </svg>
+                                            Update</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="aboutPart">
+        <p id="aboutRoyal">
+            "Royal Bank is a leading online financial services platform that provides a secure and convenient way to
+            manage your money. Our mission is to help people achieve financial security and independence by providing
+            them with easy access to personal banking services. With Royal Bank, you can save money, make payments, and
+            access a variety of other services with ease. We strive to offer the most competitive interest rates and the
+            highest level of customer service. Our goal is to make your banking experience as stress-free and enjoyable
+            as possible."
+        </p>
+    </div>
+    <footer>
+        <div>
+            <p>Royal Bank 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

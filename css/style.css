@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(0, 157, 255, 0.783);
+    /* background: rgba(255, 204, 0, 0.783); */
+    background-image: url("/images/pexels-johannes-plenio-1103970.jpg");
+    background-size: cover;
+    background-blend-mode:darken;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover */
+}
+.mainPage{
+    /* background-image: url("/images/pexels-pixabay-247676.jpg");
+    background-size: cover; */
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+header{
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+}
+header:hover{
+    box-shadow: -10px -10px 50px 10px #fff7005e;
+    transition: 0.4s;
+}
+footer{
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: montserrat;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+div .royalLogo{
+    width: 60px;
+}
+div.loginPromp{
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 50px;
+    max-width: 250px;
+}
+#loginas{
+    text-align: center;
+    padding-bottom: 30px;
+}
+#selectChioce{
+    text-align: center;
+    font-family: montserrat;
+}
+div.choose{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+div.loginOption{
+    padding: 10px;
+    font-family: montserrat;
+    /* color: #ffffff; */
+}
+div.loginOption:hover{
+    /* background: rgb(214, 226, 227); */
+    cursor: pointer;
+    box-shadow: 5px 4px 17px #ffffff;
+    transition: .3s
+}
+div#adminOption, div#bankerOption{
+    /* border: 1px solid black; */
+    border: none;
+    color: white;
+    background: rgb(0, 229, 255);
+    border-radius: 8px;
+    margin: 10px;
+}
+/* div#bankerOption{
+    border: 2px solid black;
+    background: rgb(255, 200, 0);
+    border-radius: 8px;
+    margin: 10px;
+} */
+.aboutPart{
+    display: flex;
+    justify-content: center;
+}
+#aboutRoyal{
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 450px;
+    color: #ffffff;
+    font-style: italic;
+}
+.choose a{
+    text-decoration: none;
+    color: black;
+}
+.usernamePass{
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 20px 3px #00234076;
+}
+.usernamePass label{
+    font-family: montserrat;
+}
+input.login{
+    font-family: montserrat;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 170px;
+    border: none;
+    padding: 3px;
+    border-bottom: 1px solid black;
+}
+button.userLogin{
+    padding: 8px;
+    margin: 10px;
+    font-family: montserrat;
+    background: rgb(0, 229, 255);
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+}
+
+button.userLogin:hover{
+    cursor: pointer;
+    background: rgb(255, 219, 88);
+}
+
+@media only screen and (max-device-width: 800px) {
+
+}
