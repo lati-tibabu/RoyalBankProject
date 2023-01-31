@@ -162,7 +162,8 @@ div.workPane{
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.728);
     border-radius: 17px;
-    max-width: 700px;
+    /* max-width: 700px; */
+    max-width: auto;
     box-shadow: 3px 3px 30px 3px #00417669;
 }
 label.cusInfoArea{

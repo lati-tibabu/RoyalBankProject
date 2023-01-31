@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: montserrat;
 }
 body{
     background: rgba(0, 157, 255, 0.783);
@@ -143,14 +144,15 @@ button.userLogin:hover{
 }
 li.panelOption{
     padding: 15px;
-    background: rgba(0, 140, 255, 0.491);
+    background: rgba(0, 109, 199, 0.724);
 }
 .panelOption ul a{
     padding: 5px;
     text-decoration: none;
     font-family: montserrat;
-    color: black;
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    /* background: rgb(255, 255, 255); */
     margin: 3px;
 }
 .panelOption ul a:hover{
