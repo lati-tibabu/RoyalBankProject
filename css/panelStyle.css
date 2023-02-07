@@ -1,41 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: montserrat;
 }
-body{
+
+body {
     background: rgba(0, 157, 255, 0.783);
-    /* background: rgba(255, 204, 0, 0.783); */
     background-image: url("/images/pexels-johannes-plenio-1103970.jpg");
     background-size: cover;
-    background-blend-mode:darken;
-    background-attachment:fixed;
+    background-blend-mode: darken;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover */
 }
+
 .mainPage{
-    /* background-image: url("/images/pexels-pixabay-247676.jpg");
-    background-size: cover; */
     width: auto;
     height: fit-content;
     display: flex;
     justify-content: center;
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
-header{
+
+header {
     background: rgb(0, 0, 0);
     padding: 5px;
     text-align: center;
 }
-header:hover{
+
+header:hover {
     box-shadow: -10px -10px 50px 10px #fff7005e;
     transition: 0.4s;
 }
-footer{
+
+footer {
     background: rgb(0, 0, 0);
     color: white;
     font-family: montserrat;
@@ -43,10 +40,12 @@ footer{
     padding: 5px;
     text-align: center;
 }
-div .royalLogo{
+
+div .royalLogo {
     width: 60px;
 }
-div.mainPane{
+
+div.mainPane {
     background: rgba(255, 255, 255, 0.74);
     border-radius: 30px;
     margin-top: 50px;
@@ -55,45 +54,54 @@ div.mainPane{
     /* max-width: 700px; */
     max-width: 1000px;
 }
-#loginas{
+
+#loginas {
     text-align: center;
     padding-bottom: 30px;
 }
-#selectChioce{
+
+#selectChioce {
     text-align: center;
     font-family: montserrat;
 }
-div.choose{
+
+div.choose {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-div.loginOption{
+
+div.loginOption {
     padding: 10px;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
-div.loginOption:hover{
+
+div.loginOption:hover {
     cursor: pointer;
     box-shadow: -10px -10px 50px 10px #ffffff;
     transition: .3s
 }
-div#adminOption{
+
+div#adminOption {
     border: 2px solid black;
     background: rgb(255, 200, 0);
     border-radius: 8px;
     margin: 10px;
 }
-div#bankerOption{
+
+div#bankerOption {
     border: 2px solid black;
     background: rgb(255, 200, 0);
     border-radius: 8px;
     margin: 10px;
 }
-.aboutPart{
+
+.aboutPart {
     display: flex;
     justify-content: center;
 }
-#aboutRoyal{
+
+#aboutRoyal {
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -101,20 +109,24 @@ div#bankerOption{
     color: #ffffff;
     font-style: italic;
 }
-.choose a{
+
+.choose a {
     text-decoration: none;
     color: black;
 }
-.usernamePass{
+
+.usernamePass {
     margin-top: 30px;
     padding: 30px;
     border-radius: 6px;
     box-shadow: 3px 3px 20px 3px #00234076;
 }
-.usernamePass label{
+
+.usernamePass label {
     font-family: montserrat;
 }
-input.login{
+
+input.login {
     font-family: montserrat;
     height: 30px;
     margin-left: 30px;
@@ -124,7 +136,8 @@ input.login{
     padding: 3px;
     border-bottom: 1px solid black;
 }
-button.userLogin{
+
+button.userLogin {
     padding: 8px;
     margin: 10px;
     font-family: montserrat;
@@ -133,45 +146,98 @@ button.userLogin{
     font-weight: 700;
 }
 
-button.userLogin:hover{
+button.userLogin:hover {
     cursor: pointer;
     background: rgb(255, 219, 88);
 }
-.panelOption{
+
+.panelOption {
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
-li.panelOption{
+
+#bankerPanelSearchCreate {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+#createCustomerbtn button {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 13px;
+    background: rgba(75, 164, 248, 0.753);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-family: montserrat;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#createCustomerbtn button:hover {
+    cursor: pointer;
+    background: rgba(0, 59, 147, 0.829);
+}
+
+#createCustomerbtn button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+#backtoPanel {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 13px;
+    background: rgba(75, 164, 248, 0.753);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-family: montserrat;
+    font-weight: bold;
+    border-radius: 3px;
+    max-width: 130px;
+}
+#backtoPanel:hover{
+    background: rgba(42, 152, 255, 0.929);
+}
+#backtoPanel a{
+    text-decoration: none;
+    padding: 4px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+li.panelOption {
     padding: 15px;
     background: rgba(0, 109, 199, 0.724);
 }
-.panelOption ul a{
+
+.panelOption ul a {
     padding: 5px;
     text-decoration: none;
     font-family: montserrat;
     color: rgb(255, 255, 255);
-    /* font-weight: bold; */
-    /* background: rgb(255, 255, 255); */
     margin: 3px;
 }
-.panelOption ul a:hover{
+
+.panelOption ul a:hover {
     border-bottom: 3px solid black;
-/* background: bisque; */
 }
 
-.workAreaInfo div{
-    /* text-align: ; */
+.workAreaInfo div {
     padding: 2px;
     font-family: montserrat;
     margin-left: 50px;
     margin-right: 50px;
-    /* font-weight: b; */
 }
-div.workPane{
-    /* margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0; */
+
+div.workPane {
     margin-top: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.728);
@@ -179,32 +245,37 @@ div.workPane{
     max-width: 700px;
     box-shadow: 3px 3px 30px 3px #00417669;
 }
-label.cusInfoArea{
+
+label.cusInfoArea {
     margin: 100px;
     /* margin-top: 30px; */
     padding: 5px;
 }
-div .infoArea{
+
+div .infoArea {
     width: 400px;
     margin-left: 90px;
     border-bottom: 2px solid rgb(191, 191, 191);
 }
-div .infoArea:hover{
+
+div .infoArea:hover {
     background: rgba(0, 117, 143, 0.148);
     border-bottom: 2px solid rgba(0, 125, 188, 0.84);
     transition: 0.3s;
 }
-div .infoLabel{
+
+div .infoLabel {
     font-weight: bold;
 }
+
 /*Work on Search bar for banker panel*/
-form#cusSearchBar{
+form#cusSearchBar {
     margin: 5px;
     display: flex;
     padding: 5px;
 }
 
-button#cusSearch{
+button#cusSearch {
     background: rgba(75, 164, 248, 0.753);
     color: white;
     border: none;
@@ -215,27 +286,33 @@ button#cusSearch{
     font-family: montserrat;
     font-weight: bold;
 }
-button#cusSearch:hover{
+
+button#cusSearch:hover {
     cursor: pointer;
 }
-button#cusSearch label:hover{
+
+button#cusSearch label:hover {
     cursor: pointer;
 }
-input#accBar{
+
+input#accBar {
     border: none;
     font-size: large;
     font-weight: bold;
     padding: 3px;
 }
-div.executeBtn{
+
+div.executeBtn {
     text-align: center;
     padding: 7px;
     margin-top: 15px;
 }
-div.executeBtn button:hover{
+
+div.executeBtn button:hover {
     cursor: pointer;
 }
-div.executeBtn button{
+
+div.executeBtn button {
     font-family: montserrat;
     font-size: 17px;
     font-weight: bold;
@@ -245,12 +322,107 @@ div.executeBtn button{
     background: rgb(0, 162, 255);
     color: white;
 }
-.transactionHistory p{
+
+.transactionHistory p {
     font-family: 'Courier New', Courier, monospace;
 }
-.transactionHistory{
+
+.transactionHistory {
     overflow: scroll;
 }
-@media only screen and (max-device-width: 800px) {
-
+div.createUser{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 9px;
 }
+.createUser button{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: rgba(75, 164, 248, 0.753);
+}
+.createUser button:hover{
+    background: rgb(0, 132, 255);
+    cursor: pointer; 
+}
+
+/*
+customizing banker profile panel and also making the whole page flex row
+*/
+.bankerPanelMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+img.bankerAvatar{
+    width: 30px;
+    margin: 10px;
+}
+.bankerProfile{
+    width: 200px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 30px;
+    margin: 54px;
+    padding: 50px;
+    padding: auto;
+    text-align: center;
+}
+#avatarUname{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+#bankerUname{
+    width: 170px;
+    background: rgb(0, 132, 255);
+    border: none;    
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+#bankerUname:hover{
+    cursor:default;
+    background: linear-gradient(to right, rgb(0, 132, 255), rgb(0, 217, 255));
+    transition: 1s;
+}
+#bankerUname:focus{
+    outline: none;
+}
+#logout button{
+    border: none;
+    background: rgb(0, 217, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 130px;
+    z-index: -1;
+}
+#logout button:hover{
+    transition: 0.7s;
+    background-color: rgb(0, 64, 255);
+    cursor: pointer;
+}
+/*end of banker profile styling*/
+
+
+/*styling customer information bar*/
+#infoBar{
+    width: auto;
+    font-size: medium;
+    background: transparent;
+    border: none;
+}
+#infoBar:focus{
+    outline: none;
+}
+/*styling customer information bar*/
+@media only screen and (max-device-width: 800px) {}

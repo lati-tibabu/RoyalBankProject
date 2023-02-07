@@ -15,108 +15,150 @@
             <img src="images/Roy-Logo.png" alt="logo" class="royalLogo">
         </div>
     </header>
-    <div class="mainPage">
-        <div class="mainPane">
-            <h1 id="loginas">Banker Panel</h1>
-            <div>
-                <div id="bankerPanelSearchCreate">
-                    <div >
-                        <form action="search" method="get" id="cusSearchBar">
-                            <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
-                            <button type="submit" id="cusSearch">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                                <label for="">Search</label>
-                            </button>
-                        </form>
-                    </div>
+    <div class="bankerPanelMain">
+        <div class="bankerProfile">
+            <div id="avatarUname">
+                <img src="images/personCircleBlack.png" class="bankerAvatar" alt="">
+                <input type="text" value="John Doe" id="bankerUname" readonly>
+            </div>
+            <div id="logout">
+                <form action="logout" method="post">
+                    <button type="submit">
+                        Log Out
+                    </button>
+                </form>
 
-                    <div id="createCustomerbtn">
-                        <button>
-                            <a href="createCustomer.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                </svg>
-                                <label for="">Create New Customer Account
-                                </label>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-                <div class="workPane">
-                    <div>
-                        <li class="panelOption">
-                            <ul><a href="bankerPanelInfo.html" style="border-bottom: 3px solid blue;">Information</a>
-                            </ul>
-                            <ul><a href="bankerPanelDeposit.html">Deposit</a> </ul>
-                            <ul><a href="bankerPanelWithdraw.html">Withdraw</a> </ul>
-                            <ul><a href="bankerPanelTransfer.html">Transfer</a> </ul>
-                            <ul><a href="bankerPanelTransaction.html">Transaction History</a> </ul>
-                        </li>
-                    </div>
-                    <div class="workArea">
+            </div>
+
+        </div>
+        <div class="mainPage">
+            <div class="mainPane">
+                <h1 id="loginas">Banker Panel</h1>
+                <div>
+                    <div id="bankerPanelSearchCreate">
                         <div>
-                            <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Information</h2>
-                            <div class="workAreaInfo">
-                                <div class="infoLabel">
-                                    <label for="">Account Number</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">10008765</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Full Name</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">Lati Tibabu Gamachu</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Gender</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">Male</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Address</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">Adama</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Birth Date</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">July 1, 2021</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Nationality</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">Ethiopian</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Phone</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">+251979586697</label>
-                                </div>
-                                <div class="infoLabel">
-                                    <label for="">Balance</label>
-                                </div>
-                                <div class="infoArea">
-                                    <label class="cusInfoArea" for="">3000ETB</label>
+                            <form action="search" method="get" id="cusSearchBar">
+                                <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
+                                <button type="submit" id="cusSearch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                    <label for="">Search</label>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div id="createCustomerbtn">
+                            <button>
+                                <a href="createCustomer.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                    </svg>
+                                    <label for="">Create New Customer Account
+                                    </label>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="workPane">
+                        <div>
+                            <li class="panelOption">
+                                <ul><a href="bankerPanelInfo.html"
+                                        style="border-bottom: 3px solid blue;">Information</a>
+                                </ul>
+                                <ul><a href="bankerPanelDeposit.html">Deposit</a> </ul>
+                                <ul><a href="bankerPanelWithdraw.html">Withdraw</a> </ul>
+                                <ul><a href="bankerPanelTransfer.html">Transfer</a> </ul>
+                                <ul><a href="bankerPanelTransaction.html">Transaction History</a> </ul>
+                            </li>
+                        </div>
+                        <div class="workArea">
+                            <div>
+                                <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Information</h2>
+                                <div class="workAreaInfo">
+                                    <div class="infoLabel">
+                                        <label for="">Account Number</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusAccno}"
+                                                placeholder="customer account number" readonly>
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Full Name</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusFullname}"
+                                                placeholder="customer fullname" readonly>
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Gender</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusGender}"
+                                                placeholder="customer gender" readonly>
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Address</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusAddress}"
+                                                placeholder="customer address">
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Birth Date</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusBdate}"
+                                                placeholder="customer birthdate">
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Nationality</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusNationality}"
+                                                placeholder="customer nationality">
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Phone</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusPhone}"
+                                                placeholder="customer phone number">
+                                        </label>
+                                    </div>
+                                    <div class="infoLabel">
+                                        <label for="">Balance</label>
+                                    </div>
+                                    <div class="infoArea">
+                                        <label class="cusInfoArea" for="">
+                                            <input type="text" name="cusAccno" id="infoBar" value="${cusBalance}"
+                                                placeholder="customer balance">
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
-            </form>
         </div>
     </div>
     <div class="aboutPart">

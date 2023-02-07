@@ -315,6 +315,166 @@ tr#tableHeader{
     background-color: #ff3257c9;
     color: white;
   }
+  /*
+customizing banker profile panel and also making the whole page flex row
+*/
+/* .bankerPanelMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+img.bankerAvatar{
+    width: 30px;
+    margin: 10px;
+}
+.bankerProfile{
+    width: 200px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 30px;
+    margin: 54px;
+    padding: 50px;
+    padding: auto;
+    text-align: center;
+}
+#avatarUname{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+#bankerUname{
+    width: 170px;
+    background: rgb(255, 0, 68);
+    border: none;    
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+#bankerUname:hover{
+    cursor:default;
+    background: linear-gradient(to right, rgb(255, 0, 72), rgba(255, 77, 0, 0.822));
+    transition: 1s;
+}
+#bankerUname:focus{
+    outline: none;
+}
+#logout button{
+    border: none;
+    background: rgb(255, 72, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 130px;
+    z-index: -1;
+}
+#logout button:hover{
+    transition: 0.7s;
+    background-color: rgb(255, 0, 34);
+    cursor: pointer; 
+} */
+/*end of banker profile styling*/
+
+/*Styling admin badge and logout*/
+.afterMainPane{
+    display: flex;
+    flex-direction: column;
+
+}
+.bankerProfile{
+    margin-left: 500px;
+    padding: 20px;
+    padding-left: 100px;
+    float: right;
+    background: rgba(255, 255, 255, 0.717);
+    border-radius: 10px;
+    max-width: 200px;
+}
+.adminAvatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    /* width: 16px; */
+}
+.adminLogout{
+    margin-left: 40px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+    background: rgba(253, 40, 86, 0.884);
+    color: white;
+}
+#logoutButton:hover{
+    cursor: pointer;
+}
+#logoutButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.horizontalLine{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    height: 5px;
+    background: gray;
+    border-radius: 5px;
+}
+
+@keyframes avatarIconAnimation{
+    0%{
+        color: red;
+    }
+    25%{
+        color: rgb(0, 128, 255);
+    }
+    50%{
+        color: rgb(255, 162, 0);
+    }
+    75%{
+        color: rgb(0, 255, 13);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+
+}
+.adminAvatarIcon:hover{
+    animation-name: avatarIconAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.adminUsernameVisible{
+    padding: 5px;
+}
+/*Styling admin badge and logout*/
+
+
+/*Styling customer Update button*/
+#customerUpdate{
+    background: rgba(255, 64, 64, 0.89);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+#customerUpdate:hover{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+}
+/*end of styling customer update button*/
+
 @media only screen and (max-device-width: 800px) {
 
 }

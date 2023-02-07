@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/paneStyleAdmin.css">
+    <link rel="stylesheet" href="css/paneStyleAdmin.css">
     <title>Admin</title>
 </head>
 
@@ -15,71 +15,97 @@
             <img src="/images/Roy-Logo.png" alt="logo" class="royalLogo">
         </div>
     </header>
-    <div class="mainPage">
-        <div class="mainPane">
-            <h1 id="loginas">Admin Panel</h1>
-            <div>
-                <div>
-                    <form action="search" method="get" id="cusSearchBar">
-                        <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
-                        <button type="submit" id="cusSearch">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            <label for="">Search</label>
-                        </button>
-                    </form>
+    <div class="bankerPanelMain">
+        <div class="bankerProfile">
+            <div id="avatarUname">
+                <img src="images/personCircleBlack.png" class="bankerAvatar" alt="">
+                <input type="text" value="John Doe" id="bankerUname" readonly>
+            </div>
+            <div id="logout">
+                <form action="logout" method="post">
+                    <button type="submit">
+                        Log Out
+                    </button>
+                </form>
 
-                </div>
-                <div class="workPane">
+            </div>
+
+        </div>
+        <div class="mainPage">
+            <div class="mainPane">
+                <h1 id="loginas">Admin Panel</h1>
+                <div>
                     <div>
-                        <li class="panelOption">
-                            <ul><a href="adminCreateBanker.html">Create Banker</a></ul>
-                            <ul><a href="adminBankerInfo.html">Bankers Info</a> </ul>
-                            <ul><a href="adminEditBanker.html">Edit Banker</a> </ul>
-                            <ul><a href="adminCustomerInfo.html" style="border-bottom: 3px solid rgb(255, 255, 255);">Customers Info</a> </ul>
-                            <ul><a href="adminEditCustomer.html">Edit Customer</a> </ul>
-                            <ul><a href="adminCreateAdmin.html">Create Admin</a> </ul>
-                            <ul><a href="adminEditAdmin.html">Edit Admin</a> </ul>
-                        </li>
+                        <form action="search" method="get" id="cusSearchBar">
+                            <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
+                            <button type="submit" id="cusSearch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                                <label for="">Search</label>
+                            </button>
+                        </form>
+
                     </div>
-                    <div class="workArea">
+                    <div class="workPane">
                         <div>
-                            <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Customers Information
-                            </h2>
-                            <div class="workAreaInfo">
-                                <table id="bankersInfo">
-                                    <tr>
-                                        <th>Account No</th>
-                                        <th>First Name</th>
-                                        <th>Second Name</th>
-                                        <th>Last Name</th>
-                                        <th>Gender</th>
-                                        <th>Birth Date</th>
-                                        <th>Address</th>
-                                        <th>Phone</th>
-                                        <th>Balance</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1000398</td>
-                                        <td>Lati</td>
-                                        <td>Tibabu</td>
-                                        <td>Gamachu</td>
-                                        <td>Male</td>
-                                        <td>July 1, 2001</td>
-                                        <td>Adama</td>
-                                        <td>+251979586697</td>
-                                        <td>3000ETB</td>
-                                    </tr>
-                                </table>
+                            <li class="panelOption">
+                                <ul><a href="adminCreateBanker.html">Create Banker</a></ul>
+                                <ul><a href="adminBankerInfo.html">Bankers Info</a> </ul>
+                                <ul><a href="adminEditBanker.html">Edit Banker</a> </ul>
+                                <ul><a href="adminCustomerInfo.html"
+                                        style="border-bottom: 3px solid rgb(255, 255, 255);">Customers Info</a> </ul>
+                                <ul><a href="adminEditCustomer.html">Edit Customer</a> </ul>
+                                <ul><a href="adminCreateAdmin.html">Create Admin</a> </ul>
+                                <ul><a href="adminEditAdmin.html">Edit Admin</a> </ul>
+                            </li>
+                        </div>
+                        <div class="workArea">
+                            <div>
+                                <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Customers
+                                    Information
+                                </h2>
+                                <div class="workAreaInfo">
+                                    <div>
+                                        <form action="CustomerUpdate" method="get">
+                                        <button id="customerUpdate">
+                                            Update
+                                        </button>
+                                        </form>
+                                    </div>
+                                    <table id="bankersInfo">
+                                        <tr>
+                                            <th>Account No</th>
+                                            <th>First Name</th>
+                                            <th>Second Name</th>
+                                            <th>Last Name</th>
+                                            <th>Gender</th>
+                                            <th>Birth Date</th>
+                                            <th>Address</th>
+                                            <th>Phone</th>
+                                            <th>Balance</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1000398</td>
+                                            <td>Lati</td>
+                                            <td>Tibabu</td>
+                                            <td>Gamachu</td>
+                                            <td>Male</td>
+                                            <td>July 1, 2001</td>
+                                            <td>Adama</td>
+                                            <td>+251979586697</td>
+                                            <td>3000ETB</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
-            </form>
         </div>
     </div>
     <div class="aboutPart">

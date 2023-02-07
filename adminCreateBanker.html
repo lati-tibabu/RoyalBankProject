@@ -15,109 +15,127 @@
             <img src="images/Roy-Logo.png" alt="logo" class="royalLogo">
         </div>
     </header>
-    <div class="mainPage">
-        <div class="mainPane">
-            <h1 id="loginas">Admin Panel</h1>
-            <div>
+    <div class="bankerPanelMain">
+        <div class="bankerProfile">
+            <div id="avatarUname">
+                <img src="images/personCircleBlack.png" class="bankerAvatar" alt="">
+                <input type="text" value="John Doe" id="bankerUname" readonly>
+            </div>
+            <div id="logout">
+                <form action="logout" method="post">
+                    <button type="submit">
+                        Log Out
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="mainPage">
+            <div class="mainPane">
+                <h1 id="loginas">Admin Panel</h1>
                 <div>
-                    <form action="search" method="get" id="cusSearchBar">
-                        <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
-                        <button type="submit" id="cusSearch">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            <label for="">Search</label>
-                        </button>
-                    </form>
-
-                </div>
-                <div class="workPane">
                     <div>
-                        <li class="panelOption">
-                            <ul><a href="adminCreateBanker.html"
-                                    style="border-bottom: 3px solid rgb(255, 255, 255);">Create Banker</a></ul>
-                            <ul><a href="adminBankerInfo.html">Bankers Info</a> </ul>
-                            <ul><a href="adminEditBanker.html">Edit Banker</a> </ul>
-                            <ul><a href="adminCustomerInfo.html">Customers Info</a> </ul>
-                            <ul><a href="adminEditCustomer.html">Edit Customer</a> </ul>
-                            <ul><a href="adminCreateAdmin.html">Create Admin</a> </ul>
-                            <ul><a href="adminEditAdmin.html">Edit Admin</a> </ul>
-                        </li>
-                    </div>
-                    <div class="workArea">
-                        <div>
-                            <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Create Banker</h2>
-                            <div class="workAreaInfo">
-                                <form action="createBanker" method="post">
-                                    <div class="infoLabel">
-                                        <label for="">First Name</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="text" name="bankerFname" placeholder="enter first name"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">Second Name</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="text" name="bankerSname" placeholder="enter second name"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">Last Name</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="text" name="bankerLname" placeholder="enter last name"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">User Name</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="text" name="bankerUname" placeholder="enter first name"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">Email Address</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="email" name="bankerEmail" placeholder="enter email address"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">Phone Number</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="text" name="bankerPhone" placeholder="enter phone number"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="infoLabel">
-                                        <label for="">Password</label>
-                                    </div>
-                                    <div class="infoArea" style="text-align: center;">
-                                        <input type="password" name="bankerPass" placeholder="create password"
-                                            style="border: none; font-family: montserrat; background: transparent; font-size: large;">
-                                    </div>
-                                    <div class="createUser">
-                                        <button type="submit"
-                                            style="display: flex; justify-content: baseline; border-radius: 4px;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                            </svg>
-                                            Create</button>
-                                    </div>
-                                </form>
+                        <form action="search" method="get" id="cusSearchBar">
+                            <input type="text" name="cus_accno" id="accBar" placeholder="Customer Account Number">
+                            <button type="submit" id="cusSearch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                                <label for="">Search</label>
+                            </button>
+                        </form>
 
+                    </div>
+                    <div class="workPane">
+                        <div>
+                            <li class="panelOption">
+                                <ul><a href="adminCreateBanker.html"
+                                        style="border-bottom: 3px solid rgb(255, 255, 255);">Create Banker</a></ul>
+                                <ul><a href="adminBankerInfo.html">Bankers Info</a> </ul>
+                                <ul><a href="adminEditBanker.html">Edit Banker</a> </ul>
+                                <ul><a href="adminCustomerInfo.html">Customers Info</a> </ul>
+                                <ul><a href="adminEditCustomer.html">Edit Customer</a> </ul>
+                                <ul><a href="adminCreateAdmin.html">Create Admin</a> </ul>
+                                <ul><a href="adminEditAdmin.html">Edit Admin</a> </ul>
+                            </li>
+                        </div>
+                        <div class="workArea">
+                            <div>
+                                <h2 style="text-align: center; margin: 10px; font-family: montserrat;">Create Banker
+                                </h2>
+                                <div class="workAreaInfo">
+                                    <form action="createBanker" method="post">
+                                        <div class="infoLabel">
+                                            <label for="">First Name</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="text" name="bankerFname" placeholder="enter first name"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">Second Name</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="text" name="bankerSname" placeholder="enter second name"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">Last Name</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="text" name="bankerLname" placeholder="enter last name"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">User Name</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="text" name="bankerUname" placeholder="enter first name"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">Email Address</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="email" name="bankerEmail" placeholder="enter email address"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">Phone Number</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="text" name="bankerPhone" placeholder="enter phone number"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="infoLabel">
+                                            <label for="">Password</label>
+                                        </div>
+                                        <div class="infoArea" style="text-align: center;">
+                                            <input type="password" name="bankerPass" placeholder="create password"
+                                                style="border: none; font-family: montserrat; background: transparent; font-size: large;">
+                                        </div>
+                                        <div class="createUser">
+                                            <button type="submit"
+                                                style="display: flex; justify-content: baseline; border-radius: 4px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                </svg>
+                                                Create</button>
+                                        </div>
+                                    </form>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
-            </form>
         </div>
     </div>
     <div class="aboutPart">
