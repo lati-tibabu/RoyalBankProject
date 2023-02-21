@@ -6,7 +6,7 @@
 body{
     background: rgba(0, 157, 255, 0.783);
     /* background: rgba(255, 204, 0, 0.783); */
-    background-image: url("/images/pexels-johannes-plenio-1103970.jpg");
+    background-image: url("images/pexels-johannes-plenio-1103970.jpg");
     background-size: cover;
     background-blend-mode:darken;
     background-attachment:fixed;
